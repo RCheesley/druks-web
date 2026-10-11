@@ -842,16 +842,16 @@ main section {
   color: var(--text);
 }
 
-/* Ship pipeline */
+/* Software Factory pipeline */
 
-.ship-section {
+.software-factory-section {
   overflow: hidden;
   background:
     radial-gradient(circle at 10% 44%, rgb(77 212 244 / 4%), transparent 28%),
     rgb(10 10 13 / 72%);
 }
 
-.ship-heading {
+.software-factory-heading {
   max-width: 900px;
 }
 
@@ -859,7 +859,7 @@ main section {
   margin-bottom: 18px;
 }
 
-.ship-graph {
+.software-factory-graph {
   --graph-progress: 0;
   position: relative;
   margin-top: 46px;
@@ -968,7 +968,7 @@ main section {
 }
 
 .graph-path-progress {
-  stroke: url('#ship-flow-gradient');
+  stroke: url('#software-factory-flow-gradient');
   stroke-width: 3.5;
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
@@ -988,7 +988,7 @@ main section {
   opacity: 1;
 }
 
-.ship-steps {
+.software-factory-steps {
   position: absolute;
   z-index: 3;
   inset: 0;
@@ -1301,7 +1301,7 @@ main section {
   text-transform: uppercase;
 }
 
-.ship-graph[data-active-layer='agent'] .readout-stage {
+.software-factory-graph[data-active-layer='agent'] .readout-stage {
   color: #9ab4bf;
 }
 
@@ -2236,7 +2236,7 @@ main section {
     display: none;
   }
 
-  .ship-steps {
+  .software-factory-steps {
     position: relative;
     display: grid;
     gap: 13px;
@@ -2244,7 +2244,7 @@ main section {
   }
 
   .station,
-  .ship-graph .station {
+  .software-factory-graph .station {
     position: relative;
     top: auto;
     left: auto;
@@ -2513,7 +2513,7 @@ main section {
   }
 
   .station,
-  .ship-graph .station,
+  .software-factory-graph .station,
   .station-trigger {
     grid-template-columns: 1fr;
   }
@@ -2842,14 +2842,14 @@ main section {
   background: rgb(15 15 19 / 92%);
 }
 
-.ship-graph {
+.software-factory-graph {
   border: 1px solid var(--border);
   border-top: 3px solid var(--cyan);
   background: rgb(10 10 13 / 94%);
 }
 
 .survival-demo,
-.ship-graph,
+.software-factory-graph,
 .console-tableau,
 .app-code-window {
   margin-top: clamp(42px, 5vw, 66px);
@@ -3862,14 +3862,14 @@ main section > .wrap,
 /* The storm canvas is the page background; large demos sit in it instead of covering it. */
 
 .product-section,
-.ship-section,
+.software-factory-section,
 .survive-section,
 .extend-section,
 .start-section {
   background: transparent;
 }
 
-.ship-graph {
+.software-factory-graph {
   background: transparent;
 }
 
@@ -3982,7 +3982,7 @@ main section > .wrap,
 /* One material for every major product surface. */
 
 .product-ui,
-.ship-graph,
+.software-factory-graph,
 .app-code-window,
 .install-line {
   border-color: var(--demo-border);
@@ -3990,7 +3990,7 @@ main section > .wrap,
 }
 
 .product-ui,
-.ship-graph {
+.software-factory-graph {
   border-right-width: 1px;
   border-bottom-width: 1px;
   border-left-width: 1px;

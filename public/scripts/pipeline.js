@@ -446,11 +446,11 @@
     schedule();
   }
 
-  function initShipPipeline() {
-    const stations = Array.from(document.querySelectorAll('#ship-stations .station'));
+  function initSoftwareFactoryPipeline() {
+    const stations = Array.from(document.querySelectorAll('#software-factory-stations .station'));
     const fill = document.getElementById('trackFill');
     const pulse = document.getElementById('trackPulse');
-    const graph = document.querySelector('[data-ship-graph]');
+    const graph = document.querySelector('[data-software-factory-graph]');
     const sequence = document.getElementById('rseq');
     const stage = document.getElementById('rstage');
     const message = document.getElementById('rmsg');
@@ -668,7 +668,7 @@
   initProductConsole();
   initStormCanvas();
   initRotatingWork();
-  initShipPipeline();
+  initSoftwareFactoryPipeline();
   initCopyButton();
   initMobileNav();
 })();
