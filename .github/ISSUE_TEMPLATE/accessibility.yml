@@ -1,0 +1,53 @@
+name: Accessibility issue
+description: Something makes the site harder to use with assistive technology, a keyboard, reduced motion, or for people with disabilities.
+title: "[A11y] "
+labels: ["accessibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! Accessibility reports are especially welcome. If you are describing your own experience, please share as much or as little as you are comfortable with.
+  - type: textarea
+    id: barrier
+    attributes:
+      label: What is the barrier?
+      description: Describe what is difficult or impossible, and what would make it work for you.
+      placeholder: The pipeline animation cannot be paused and keeps moving even with "reduce motion" on.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where on the site?
+      placeholder: The "Ticket in. PR out." section
+    validations:
+      required: true
+  - type: input
+    id: tech
+    attributes:
+      label: Assistive technology or settings in use
+      description: Screen reader, magnifier, keyboard only, voice control, high contrast, reduced motion, and so on. Include versions if you know them.
+      placeholder: VoiceOver on macOS 15 with Safari 18
+  - type: dropdown
+    id: wcag
+    attributes:
+      label: Related WCAG guideline, if you know it
+      description: Not required. Leave it blank if you are not sure.
+      options:
+        - Not sure
+        - 1.1 Text alternatives
+        - 1.3 Adaptable (structure and relationships)
+        - 1.4 Distinguishable (contrast, resizing, motion)
+        - 2.1 Keyboard accessible
+        - 2.2 Enough time (pausing animation)
+        - 2.3 Seizures and physical reactions
+        - 2.4 Navigable (focus, headings, link purpose)
+        - 2.5 Input modalities (target size, gestures)
+        - 3.1 Readable
+        - 3.2 Predictable
+        - 4.1 Compatible (names, roles, values)
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, recordings or links to tooling output are welcome.

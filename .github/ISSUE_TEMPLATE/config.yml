@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security report
+    url: https://github.com/czpython/druks-web/security/advisories/new
+    about: Report vulnerabilities privately. Please do not open a public issue.
+  - name: Questions about Druks itself
+    url: https://github.com/czpython/druks/issues
+    about: This repository is only for the druks.ai website. Platform questions and bugs belong in the main Druks repository.
+  - name: Documentation
+    url: https://docs.druks.ai/
+    about: Guides and reference for using Druks.

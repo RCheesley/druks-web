@@ -1,0 +1,54 @@
+name: Bug report
+description: Something on the druks.ai website looks wrong or does not work.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this! A few details help us reproduce and fix it quickly.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe what you saw, and what you expected to see instead.
+      placeholder: The "See it in action" button in the hero does nothing when tapped on my phone.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we see the same thing?
+      placeholder: |
+        1. Open https://druks.ai on a phone
+        2. Scroll to the hero
+        3. Tap "See it in action"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page or section
+      description: Where on the site did this happen?
+      placeholder: https://druks.ai/#software-factory
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      description: Browser name and version, operating system, and device or screen size.
+      placeholder: Safari 18 on iPhone 15, iOS 18.4
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recording
+      description: Drag and drop images or a short video here if you have them.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and could not find this already reported.
+          required: true
